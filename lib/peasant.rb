@@ -1,5 +1,3 @@
-require_relative('unit.rb')
-
 class Peasant < Unit
 
   def initialize
