@@ -9,7 +9,7 @@ describe Unit do
   describe "#dead?" do
     it "returns true if health is 0 or lower" do
       @unit.damage(30)
-      expect(@unit.dead?).to be_truthy
+      expect(@unit.dead?).to be true
     end
 
     it "returns false if health is greater than 0" do

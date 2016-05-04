@@ -8,7 +8,7 @@ class Unit
   end
 
   def attack!(enemy)
-    enemy.damage(self.attack_power) unless enemy.dead? || self.dead?
+    enemy.damage(@attack_power) unless enemy.dead? || self.dead?
   end
 
   def damage(attack_power_specified)
@@ -16,7 +16,7 @@ class Unit
   end
 
   def dead?
-    true unless self.health_points > 0
+    true unless @health_points > 0
   end
 
 end

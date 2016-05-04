@@ -13,7 +13,7 @@ class Footman < Unit
 
   def attack!(enemy)
     if enemy.class == Barracks
-      attack = ((self.attack_power)/2.0).ceil
+      attack = ((@attack_power)/2.0).ceil
       enemy.damage(attack)
     else
       super(enemy)

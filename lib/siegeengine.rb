@@ -12,7 +12,7 @@ class SiegeEngine < Unit
 
   def attack!(enemy)
     if enemy.class == Barracks
-      attack = self.attack_power * 2
+      attack = @attack_power * 2
       enemy.damage(attack)
     elsif enemy.class == SiegeEngine
       super(enemy)
